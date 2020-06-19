@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+
+    <title>CVRCE University</title>
+
+    <object th:include="/layouts/css-stylesheet/l-css-head ::lhead"
+            th:remove="tag"></object>
+</head>
+<body>
+
+    <div id="wrapper" class="home-page">
+        <div th:replace="/layouts/layout-2/fragments/topbar ::ltopbar">This Is The Header Content</div>
+        <div th:replace="/layouts/layout-2/fragments/header ::lheader">This Is The Header Content</div>
+        <th:block layout:fragment="lcontent">
+            <h1>Hi ...... Static content for prototyping purposes only</h1>
+        </th:block>
+    <div th:replace="/layouts/layout-2/fragments/footer ::lfooter"></div>
+    <div th:replace="/layouts/js-script/l-content-script"></div>
+    </div>
+    <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i> </a>
+
+</body>
+</html>

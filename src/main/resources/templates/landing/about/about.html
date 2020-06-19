@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorator="/layouts/layout-2/layout">
+    <body>
+        <section layout:fragment="lcontent">
+
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- Heading and para -->
+                        <div class="block-heading-two">
+                            <h3>
+                                <span>Programes</span>
+                            </h3>
+                        </div>
+                        <p>
+                            Sed ut perspiciaatis unde omnis iste natus error sit voluptatem
+                            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                            quae ab illo inventore veritatis et quasi architecto beatae vitae
+                            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                            aspernatur. <br></br> <br></br>Sed ut perspiciaatis iste natus error
+                            sit voluptatem probably haven't heard of them accusamus.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="block-heading-two">
+                            <h3>
+                                <span>Latest News</span>
+                            </h3>
+                        </div>
+                        <!-- Accordion starts -->
+                        <div class="panel-group" id="accordion-alt3">
+                            <!-- Panel. Use "panel-XXX" class for different colors. Replace "XXX" with color. -->
+                            <div class="panel">
+                                <!-- Panel heading -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-alt3"
+                                           href="#collapseOne-alt3"> <i class="fa fa-angle-right"></i>
+                                            Accordion Heading Text Item # 1
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne-alt3" class="panel-collapse collapse">
+                                    <!-- Panel body -->
+                                    <div class="panel-body">Sed ut perspiciaatis unde omnis iste
+                                        natus error sit voluptatem accusantium doloremque laudantium,
+                                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                                        quasi architecto beatae vitae dicta sunt explicab\o. Nemo enim
+                                        ipsam voluptatem quia voluptas</div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-alt3"
+                                           href="#collapseTwo-alt3"> <i class="fa fa-angle-right"></i>
+                                            Accordion Heading Text Item # 2
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo-alt3" class="panel-collapse collapse">
+                                    <div class="panel-body">Sed ut perspiciaatis unde omnis iste
+                                        natus error sit voluptatem accusantium doloremque laudantium,
+                                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                                        quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                                        ipsam voluptatem quia voluptas</div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-alt3"
+                                           href="#collapseThree-alt3"> <i class="fa fa-angle-right"></i>
+                                            Accordion Heading Text Item # 3
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree-alt3" class="panel-collapse collapse">
+                                    <div class="panel-body">Sed ut perspiciaatis unde omnis iste
+                                        natus error sit voluptatem accusantium doloremque laudantium,
+                                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                                        quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                                        ipsam voluptatem quia voluptas</div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-alt3"
+                                           href="#collapseFour-alt3"> <i class="fa fa-angle-right"></i>
+                                            Accordion Heading Text Item # 4
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFour-alt3" class="panel-collapse collapse">
+                                    <div class="panel-body">Sed ut perspiciaatis unde omnis iste
+                                        natus error sit voluptatem accusantium doloremque laudantium,
+                                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                                        quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                                        ipsam voluptatem quia voluptas</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="timetable">
+                            <h3>
+                                <span class="fa fa-clock-o"></span> Time Table
+                            </h3>
+                            <hr></hr>
+                            <dl>
+                                <dt>Monday - Friday:</dt>
+                                <dd>9am-3pm</dd>
+                            </dl>
+                            <dl>
+                                <dt>Saturday:</dt>
+                                <dd>9am-1pm</dd>
+                            </dl>
+                            <h4>Music Classes</h4>
+                            <dl>
+                                <dt>Saturday:</dt>
+                                <dd>2pm-5pm</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <br></br>
+            </div>
+        </section>
+    </body>
+</html>

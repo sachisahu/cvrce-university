@@ -1,0 +1,52 @@
+<header th:fragment="lheader">
+    <div class="navbar navbar-default navbar-static-top">
+        <form id="formMenu">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img th:src="@{/img/favicon-32x32.png}" alt="Logo"  src=""/>CV RAMAN GLOBAL UNIVERSITY
+                    </a>
+
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="javascript:void(0)" onclick="postToMainCanvas('/landing');">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0)" onclick="postToMainCanvas('/app/about/start');">About Us</a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0)" onclick="postToMainCanvas('/app/courses/start');">Courses</a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0)" onclick="postToMainCanvas('/app/fees/start');">Fees</a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0)" onclick="postToMainCanvas('/app/portfolio/start');">Portfolio</a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0)" onclick="postToMainCanvas('/app/contact/start');">Contact Us</a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0)" onclick="postToMainCanvas('/app/login/start');">Login</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</header>

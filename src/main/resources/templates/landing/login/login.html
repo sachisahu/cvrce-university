@@ -1,0 +1,65 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorator="/layouts/layout-2/layout">
+
+<body>
+    <section layout:fragment="lcontent">
+        <section id="inner-headline">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="pageTitle">Login</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="global-page-header">
+            <div class="model-title">
+                <div class="model-content">
+                    <div class="model-header">
+                        <button type="button" class="close" data-dismiss="model">
+                            <span aria-hidden="true">x</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h3 class="model-title" id="model-login-label">Login to out site</h3>
+                        <p>Enter your Username and Password to Login</p>
+                    </div>
+
+                    <div class="model-body">
+
+                        <form role="form" th:action="@{/landing/dashboard/dashboard}" method="post"
+                              id="frmLogin" autocomplete="off" class="login-form">
+
+                            <div class="form-group">
+                                <label class="sr-only" for="form-username">UserName</label>
+                                <input type="text" id="username" name="username" value="admin"
+                                       placeholder="Username..." class="form-username form-control"/>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="sr-only" for="form-password">PassWord</label>
+                                <input type="password" id="password" name="password" value="admin"
+                                       placeholder="Password..." class="form-password form-control"/>
+                            </div>
+
+                            <div class="form-group" align="center">
+                                <button type="submit" class="btn">Sign In!</button>
+                                <a class="btn" href="javascript:void(0)" onclick="postToMainCanvas('/app/login/signup');">Register</a>
+                                <button type="button"  class="btn">Forgot Password!</button>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+
+
+</body>
+</html>

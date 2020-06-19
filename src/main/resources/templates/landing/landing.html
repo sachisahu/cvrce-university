@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorator="/layouts/layout-2/layout">
+<body>
+    <section layout:fragment="lcontent">
+        <section id="banner">
+            <div th:replace="/landing/fragment/banner"></div>
+        </section>
+
+        <section id="call-to-action-2">
+            <div th:replace="/landing/fragment/welcome"></div>
+        </section>
+
+        <section id="content">
+            <div th:replace="/landing/fragment/course"></div>
+        </section>
+
+        <section id="section-padding gray-bg">
+            <div th:replace="/landing/fragment/institute"></div>
+        </section>
+
+        <!--<section id="about home-about">
+            <div th:replace="/landing/fragment/home-about"></div>
+        </section>-->
+    </section>
+
+        <th:block layout:fragment="script">
+
+
+        </th:block>
+
+
+</body>
+</html>
