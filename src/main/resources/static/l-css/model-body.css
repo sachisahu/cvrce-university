@@ -1,0 +1,4 @@
+.model-body {
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle }
