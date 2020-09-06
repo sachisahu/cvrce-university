@@ -3,9 +3,9 @@ server:
 spring:
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/cvrce-university-1
+    url: jdbc:mysql://localhost:3306/college
     username: root
-    password: password
+    password: 1212
   jpa:
     hibernate:
       ddl-auto: update
