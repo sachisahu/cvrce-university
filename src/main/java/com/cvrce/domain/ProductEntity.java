@@ -32,4 +32,15 @@ public class ProductEntity {
     public float getPrice() {return price;}
 
     public void setPrice(float price) {this.price = price;}
+
+    @Override
+    public String toString() {
+        return "ProductEntity{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", brand='" + brand + '\'' +
+                ", madein='" + madein + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }
